@@ -1,5 +1,1 @@
-WEDDING INVITATION V7 — BUTTERFLY PREMIUM
-
-Includes the V6 scratch-to-reveal date/countdown, real couple photo and music, plus a colorful premium opening with animated butterflies, sparkles, glowing gradients, and elegant door animation.
-
-The countdown starts only after the scratch card is revealed.
+Wedding Invitation V5 — date/countdown updated to 12 December 2026. Countdown target is 12 Dec 2026 at 9:00 AM. Replace customer details in script.js. Assets included: couple.jpg and music.mp3.
