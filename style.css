@@ -1,2 +1,35 @@
 *{box-sizing:border-box}body{margin:0;background:#100714;color:#fff;font-family:Georgia,serif}section{min-height:100vh;padding:60px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle,#54234f,#100714 70%)}small{font:10px Arial;letter-spacing:.18em;color:#f2d58a}h2{font-size:clamp(42px,12vw,68px);font-weight:400;line-height:.95}i{color:#f2c875}.photo{width:min(82vw,340px);aspect-ratio:4/5;border:2px solid #f2d58a88;border-radius:170px 170px 18px 18px;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover}h3{font-size:27px;font-weight:400}h3 span{color:#eaa5c9}.scratch{width:min(92vw,390px);height:220px;position:relative;border-radius:22px;overflow:hidden}.date{position:absolute;inset:0;background:linear-gradient(135deg,#ffe6a5,#b76690,#59376d);color:#210d25;display:flex;flex-direction:column;align-items:center;justify-content:center}.date strong{font-size:26px;margin:14px}.date span{font:12px Arial}canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none}.count{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;width:min(94vw,500px)}.count div,.card{padding:18px;border:1px solid #f2d58a44;border-radius:16px;background:#ffffff09}.count b{display:block;font-size:29px;color:#f2d58a}.count small{font-size:8px}.card{width:min(92vw,440px);margin:7px;line-height:1.8}#music{display:none;position:fixed;right:18px;bottom:18px;z-index:50;border:1px solid #f2d58a;background:#2b142f;color:#f2d58a;border-radius:50%;width:46px;height:46px}#music.show{display:block}
-#door{position:fixed;inset:0;z-index:9999;background:radial-gradient(circle,#6a2862,#120817 70%);display:flex;align-items:center;justify-content:center;overflow:hidden}.d{position:absolute;top:0;width:51%;height:100%;background:linear-gradient(135deg,#481b50,#160a20);transition:transform 1.3s cubic-bezier(.77,0,.18,1);box-shadow:inset 0 0 80px #000}.l{left:0;transform-origin:left}.r{right:0;transform-origin:right}.opening .l{transform:perspective(900px) rotateY(-105deg)}.opening .r{transform:perspective(900px) rotateY(105deg)}.intro{position:relative;z-index:10;text-align:center}.intro h1{font-size:64px;line-height:.9;font-weight:400}.intro p{font-size:20px}.intro b{color:#eaa5c9}.intro button{position:relative;z-index:30;border:1px solid #f2d58a99;border-radius:30px;padding:15px 24px;background:linear-gradient(90deg,#742d6e,#b74d88);color:white;cursor:pointer;letter-spacing:.1em}.intro em{display:block;font:10px Arial;margin-top:12px;opacity:.6}.butterflies{position:absolute;font-size:28px;animation:float 5s infinite}@keyframes float{50%{transform:translateY(-35px)}}.opening{pointer-events:none}.gone{opacity:0;visibility:hidden;transition:opacity .5s}
+#door{position:fixed;inset:0;z-index:9999;background:radial-gradient(circle,#6a2862,#120817 70%);display:flex;align-items:center;justify-content:center;overflow:hidden}.d{position:absolute;top:0;width:51%;height:100%;background:linear-gradient(135deg,#481b50,#160a20);transition:transform 1.3s cubic-bezier(.77,0,.18,1);box-shadow:inset 0 0 80px #000}.l{left:0;transform-origin:left}.r{right:0;transform-origin:right}.opening .l{transform:perspective(900px) rotateY(-105deg)}.opening .r{transform:perspective(900px) rotateY(105deg)}.intro{position:relative;z-index:10;text-align:center}.intro h1{font-size:32px;line-height:1.05;font-weight:400;letter-spacing:.08em}.intro p{font-size:48px;font-weight:500;letter-spacing:.02em;margin:24px 0;color:#fff}.intro b{color:#f2c875;margin:0 10px}.intro button{position:relative;z-index:30;border:1px solid #f2d58a99;border-radius:30px;padding:15px 24px;background:linear-gradient(90deg,#742d6e,#b74d88);color:white;cursor:pointer;letter-spacing:.1em}.intro em{display:block;font:10px Arial;margin-top:12px;opacity:.6}.butterflies{position:absolute;font-size:28px;animation:float 5s infinite}@keyframes float{50%{transform:translateY(-35px)}}.opening{pointer-events:none}.gone{opacity:0;visibility:hidden;transition:opacity .5s}
+/* V10 luxury butterfly + sparkle animation */
+.butterflies{position:absolute;inset:0;z-index:15;pointer-events:none;overflow:hidden}
+.butterflies:before,.butterflies:after{content:"✦  ✧  ·  ✦  ·  ✧  ✦  ·  ✧  ✦";position:absolute;inset:8% 4%;color:#ffe8a8;font-size:15px;letter-spacing:22px;opacity:.15;animation:sparklePulse 1.8s ease-in-out infinite}
+.butterflies:after{inset:55% 3%;font-size:11px;letter-spacing:30px;animation-delay:.8s}
+.bfly{position:absolute;display:block;font-size:25px;filter:drop-shadow(0 0 7px #ffd9f0) drop-shadow(0 0 14px #f6c76d);animation:flyOut 5.5s cubic-bezier(.2,.7,.25,1) forwards;opacity:0}
+.bfly:nth-child(1){left:9%;top:65%;animation-delay:.15s}
+.bfly:nth-child(2){left:24%;top:45%;animation-delay:.75s}
+.bfly:nth-child(3){left:74%;top:55%;animation-delay:.35s}
+.bfly:nth-child(4){left:87%;top:70%;animation-delay:1s}
+.bfly:nth-child(5){left:48%;top:78%;animation-delay:1.35s}
+.bfly:nth-child(6){left:60%;top:25%;animation-delay:.5s}
+@keyframes flyOut{
+  0%{opacity:0;transform:translate(0,80px) scale(.45) rotate(-10deg)}
+  12%{opacity:1}
+  35%{transform:translate(-35px,-95px) scale(.8) rotate(12deg)}
+  58%{transform:translate(70px,-210px) scale(1) rotate(-14deg)}
+  78%{opacity:.95}
+  100%{opacity:0;transform:translate(150px,-480px) scale(.35) rotate(24deg)}
+}
+@keyframes sparklePulse{0%,100%{opacity:.15;transform:scale(.98)}50%{opacity:.95;transform:scale(1.08)}}
+.after-butterflies{position:fixed;inset:0;z-index:4;pointer-events:none;overflow:hidden;opacity:0;transition:opacity 1s}
+.after-butterflies.active{opacity:1}
+.float-bfly{position:absolute;font-size:18px;filter:drop-shadow(0 0 7px #ffd9f0) drop-shadow(0 0 12px #f2c76c);animation:insideFly 9s ease-in-out infinite}
+.float-bfly:nth-child(1){left:4%;top:38%;animation-delay:0s}
+.float-bfly:nth-child(2){left:88%;top:52%;animation-delay:2s}
+.float-bfly:nth-child(3){left:14%;top:82%;animation-delay:4s}
+.float-bfly:nth-child(4){left:78%;top:20%;animation-delay:6s}
+@keyframes insideFly{
+  0%,100%{transform:translate(0,0) rotate(-8deg);opacity:.2}
+  25%{transform:translate(35px,-55px) rotate(12deg);opacity:.9}
+  50%{transform:translate(-25px,-100px) rotate(-12deg);opacity:.55}
+  75%{transform:translate(45px,-35px) rotate(8deg);opacity:.85}
+}
