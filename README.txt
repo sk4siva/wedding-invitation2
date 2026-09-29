@@ -1,1 +1,4 @@
-V8 FIXED. Replace index.html, style.css and script.js. Keep your existing assets/couple.jpg and assets/music.mp3. The OPEN INVITATION click now reliably opens the doors; music starts on the click; overlay is removed after animation.
+V9 — NAMES FOCUS UPDATE
+Opening screen now keeps “WEDDING INVITATION” small and makes the couple names the main focus.
+Door opening, butterfly motion, music, scratch reveal and countdown remain unchanged.
+Replace index.html and style.css from this ZIP. Keep the existing assets folder.
