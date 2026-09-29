@@ -1,21 +1,8 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wedding Invitation</title><link rel="stylesheet" href="style.css"></head><body class="lock">
-<div id="doorIntro"><div class="panel left"></div><div class="panel right"></div><div class="doorText"><small>YOU ARE INVITED</small><h1><span data-field="bride">Aaradhya</span><br><i>&</i><br><span data-field="groom">Arjun</span></h1><button id="openInvite">OPEN INVITATION</button><small>TAP TO OPEN</small></div></div>
-<button id="musicBtn">Ⅱ</button><audio id="music" loop src="assets/music.mp3"></audio>
-<main id="invitation">
-<section class="hero reveal"><small>TOGETHER WITH THEIR FAMILIES</small><h1><span data-field="bride">Aaradhya</span><br><i>&</i><br><span data-field="groom">Arjun</span></h1><p data-field="shortDate">12 · DECEMBER · 2026</p><b>SCROLL ↓</b></section>
-<section class="reveal"><small>A BEAUTIFUL BEGINNING</small><h2>Two hearts.<br><i>One journey.</i></h2><p data-field="message">With the blessings of our families, we invite you to celebrate our special day with us.</p></section>
-<section class="photo"><img src="assets/couple.jpg" alt="Couple"></section>
-<section class="reveal center countdown-section">
-<small>SAVE THE DATE</small>
-<div class="date"><strong data-field="day">12</strong><span data-field="month">DECEMBER</span><span data-field="year">2026</span></div>
-<div class="countdown" id="countdown">
-  <div><strong id="days">000</strong><span>DAYS</span></div>
-  <div><strong id="hours">00</strong><span>HOURS</span></div>
-  <div><strong id="minutes">00</strong><span>MINUTES</span></div>
-  <div><strong id="seconds">00</strong><span>SECONDS</span></div>
-</div>
-</section>
-<section class="reveal"><small>CELEBRATIONS</small><h2>Join us for<br><i>the moments.</i></h2><div id="events"></div></section>
-<section class="reveal"><small>THE VENUE</small><h2 data-field="venue">Prem Hall</h2><p data-field="address">Your venue address goes here</p><a id="mapBtn" href="#" target="_blank">OPEN MAP</a></section>
-<section class="reveal center"><small>WITH LOVE</small><h2>We can't wait<br><i>to celebrate with you.</i></h2><p class="sig"><span data-field="bride">Aaradhya</span> & <span data-field="groom">Arjun</span></p></section>
-</main><script src="script.js"></script></body></html>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wedding Invitation</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="door"><div class="d l"></div><div class="d r"></div><div class="intro"><div>✦ ✧ ✦ ✧ ✦</div><small>WITH LOVE & BLESSINGS</small><h1>Wedding<br><i>Invitation</i></h1><p>Shiva <b>&</b> Your Love</p><button id="open">OPEN INVITATION ↗</button><em>Tap to open</em></div><div class="butterflies">🦋　🦋　🦋</div></div>
+<audio id="audio" loop><source src="assets/music.mp3" type="audio/mpeg"></audio>
+<main><section><small>TOGETHER WITH THEIR FAMILIES</small><h2>We're Getting<br><i>Married</i></h2><div class="photo"><img src="assets/couple.jpg"></div><h3>Shiva <span>&</span> Your Love</h3></section>
+<section><small>A LITTLE SURPRISE</small><h2>Scratch to<br><i>Reveal the Date</i></h2><div class="scratch"><div class="date"><small>SAVE THE DATE</small><strong>12 DECEMBER 2026</strong><span>9:00 AM onwards</span></div><canvas id="scratch"></canvas></div><p id="hint">Scratch the golden layer ✨</p></section>
+<section><small>THE COUNTDOWN</small><h2>Until Our<br><i>Big Day</i></h2><div class="count"><div><b id="days">00</b><small>Days</small></div><div><b id="hours">00</b><small>Hours</small></div><div><b id="mins">00</b><small>Minutes</small></div><div><b id="secs">00</b><small>Seconds</small></div></div></section>
+<section><small>JOIN US</small><h2>Wedding<br><i>Celebration</i></h2><div class="card">♡ THE WEDDING<br><b>12 December 2026</b><br>9:00 AM onwards</div><div class="card">⌖ VENUE<br><b>Wedding Venue</b></div></section>
+<section><h2>We can't wait<br>to celebrate<br><i>with you.</i></h2></section></main><button id="music">♫</button><script src="script.js"></script></body></html>

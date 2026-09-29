@@ -1,1 +1,1 @@
-Wedding Invitation V5 — date/countdown updated to 12 December 2026. Countdown target is 12 Dec 2026 at 9:00 AM. Replace customer details in script.js. Assets included: couple.jpg and music.mp3.
+V8 FIXED. Replace index.html, style.css and script.js. Keep your existing assets/couple.jpg and assets/music.mp3. The OPEN INVITATION click now reliably opens the doors; music starts on the click; overlay is removed after animation.
